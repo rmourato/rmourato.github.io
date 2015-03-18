@@ -3,13 +3,11 @@ layout: post
 title: "Self-disposing objects."
 description: "Why having objects destroying themselves is a bad idea."
 tags: [C#, .NET]
-image:
-  feature: katana.jpg
-  credit: seeyouphoto
-  creditlink: http://www.flickr.com/photos/seeyou-photos/4122522897
-comments: true
-share: true
+#comments: true
+#share: true
 ---
+
+Do you make your objects destroy themselves?
 
 The other day I was assigned to look at a bug where the application simply crashed
 and no information whatsoever was gathered on why it happened.

@@ -3,12 +3,8 @@ layout: post
 title: "Unit Testing"
 description: "A look on how to best size your unit tests."
 tags: [Testing]
-image:
-  feature: piece_of_a_jigsaw.jpg
-  credit: droetker0912
-  creditlink: http://www.flickr.com/photos/droetker0912/5542920908
-comments: true
-share: true
+#comments: true
+#share: true
 ---
 
 How large is the scope of your unit test?
