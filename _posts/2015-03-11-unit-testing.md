@@ -15,11 +15,11 @@ with a single test?
 And what is a unit, even?
 
 I have seen people writing tests that target a single function/method, a class, a web service...
-and calling them all unit tests, so I guess the Unit Under Test (UUT) can be anything.
+and calling them all unit tests, so you could say your Unit Under Test (UUT) could be anything.
 
 There is, however, a sweet spot that gives us the most benefits.
 
-# Some benefits of unit testing
+# Benefits of unit testing
 
 To better understand what size each unit should be let's first look at what we can get out from a test.
 It can:
@@ -38,7 +38,7 @@ I could keep adding more into the list, but let's stick with these points for no
 
 # Finding your UUTs
 
-On a talk a had with work colleagues the other day we were discussing where it would be best to
+On a talk a had with work colleagues we were discussing where it would be best to
 retrofit a test suite for ensuring that a vital piece of functionality wasn't broken, now (they weren't that confident
 with the current implementation) or in the future.
 
@@ -57,13 +57,13 @@ Another of the developers, though, was arguing that in this manner the test coul
 whilst the rest of the transaction could still fail. Thus, the test wouldn't prevent
 the application from failing should anything with that particular transaction fail.
 
-While he was correct, what this clearly demonstrated is that the transaction should be broken into
+While he was correct, what this demonstrated, really, is that the transaction should be broken into
 more maintainable pieces that can be tested in isolation.
 
 Going with the illusion that by testing more with a single test we are saving ourselves work and making the product more robust 
-is **false economy**. What we are doing is hiding design inefficiences that need addressed before they grow even further. 
+is **false economy**. What we are doing is hiding design inefficiences that need addressed before they grow further. 
 
-Let's see why.
+Why?
 
 If you target a high-level entrypoint for your tests and something wrong happens, your test suite may or may not 
 highlight that failure - it all depends on just how many different scenarios you were able to think about.
@@ -118,7 +118,7 @@ Keep your UUT small and you can have much better control over it.
 If you find you are still not getting the test coverage you need then write more test suites 
 next to those areas. This way your modules can be reliably tested independently from the rest of your system.
 
-# It's a learning journey. Don't stop.
+# It's a learning journey
 
 As you genuinely put an effort in doing testing you will find coding easier,
 more enjoyable and testing will be greatly simplified. 
