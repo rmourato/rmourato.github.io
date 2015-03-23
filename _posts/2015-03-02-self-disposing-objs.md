@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Self-disposing objects."
+title: "Self-Disposing Objects"
 description: "Why having objects destroying themselves is a bad idea."
 tags: [C#, .NET]
 #comments: true
