@@ -118,7 +118,7 @@ Keep your UUT small and you can have much better control over it.
 If you find you are still not getting the test coverage you need then write more test suites 
 next to those areas. This way your modules can be reliably tested independently from the rest of your system.
 
-# It's a learning journey
+# Keep at it
 
 As you genuinely put an effort in doing testing you will find coding easier,
 more enjoyable and testing will be greatly simplified. 
