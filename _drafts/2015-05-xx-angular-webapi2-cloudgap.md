@@ -33,7 +33,7 @@ Let's fix that and write our own app for managing our files.
 
 # Defining our goal
 
-![Final product screenshot](/img/2015-05-04-angular-webapi2-cloudgap/cloudgap_downloads.png)
+![Cloudgap screenshot](/img/cloudgap/cloudgap_downloads.png)
 
 The app should be very simple to use, but also to implement (both in effort and time).
 
