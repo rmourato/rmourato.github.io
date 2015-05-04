@@ -192,12 +192,9 @@ Our route definition says:
 * If '/folders/' has been reached, replace *ng-view* with the 'folder.html' partial and assign it with the 'FolderCtrl' controller
 * Let 'folderName' be a route parameter to represent anything after the '/folders/' URL and make it accessible by the assigned controller
 
-From these 2 partials:
+From these 2 partials **home** will be used as a landing page while **folder** is where all the action happens - file navigation, listing and operations.
 
-* **home**, will be used as a landing page
-* **folder**, is where all the action happens - file navigation, listing and operations
-
-Let's jump the the latter which is the relevant to us.
+Let's jump the the latter which is the one we're interested in.
 
 ### Folder partial
 
@@ -207,3 +204,81 @@ If you've seen the screenshot above you may notice 3 distinct parts to it:
 * Breadcrumb navigation
 * File listing
 
+#### File upload
+
+Before we go into detail I'll have to be honest: I deliberately chose not to write any custom directives for this application.
+
+OK, I'll admit it. I don't like them! There, I said it.
+
+People tend to jump too quickly into the custom directive bandwagon but, really, you should only do
+so when you have no other choice. It is clunky and it locks you to the framework.
+
+As you'll see, the application is simple enough that it doesn't need any. 
+Given we don't even need to use the same logic against multiple partials/controllers
+then there is no clear benefit for needing one.
+
+If you want to write custom elements then you should be looking at [Web Components](http://webcomponents.org/) as the way forward.
+
+With that out of the way... I did use a 3rd party directive to deal with file upload for me.
+
+While trying to write my own thing I found out file upload can get a bit tricky, especially
+with the different behaviours in browsers etc, so I took the shortcut and used Danial Farid's own
+[ng-file-upload](https://github.com/danialfarid/ng-file-upload) (thank you!).
+
+Here is how our upload drop area looks like:
+
+{% highlight html %}
+<div class="panel panel-default">
+    <div ngf-drop ngf-select ng-model="files" ngf-multiple="true"
+         ngf-drag-over-class="bg-warning" class="panel-body bg-info">
+        Drop files here to upload.
+    </div>
+</div>
+{% endhighlight %}
+
+Nice and simple (because it does hide all the nasty detail :)
+
+We've configured our directive to allow dropping files, or clicking it to 
+present the "File Open" dialog on your browser for selecting 1 or more files to upload.
+
+If you are dragging files over it then the CSS class changes to a yellow'ish 
+background to give you feedback that you're dragging files over the control.
+
+To support this, we have the following in our controller:
+
+{% highlight js %}
+$scope.$watch('files', function () {
+    $scope.upload($scope.files);
+});
+
+$scope.upload = function (files) {
+    if (files && files.length) {
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            Upload.upload({
+                method: 'POST',
+                url: 'api/files',
+                data: { FilePath: currentFolder },
+                file: file
+            }).success(function (data, status, headers, config) {
+                $scope.init();
+            });
+        }
+    }
+};
+{% endhighlight %}
+
+The first $scope function allows our directive to be notified for changes
+and trigger the upload function. This, in turn, goes through each file in the
+list and issues a POST request to our service with the file's contents.
+
+It goes through each file one by one because not all browsers support a single
+upload request containing all the files. Instead, we POST each file in turn.
+
+#### Breadcrumb navigation
+
+TBD
+
+#### File Listing
+
+TBD
