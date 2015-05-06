@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://example.com" # the base hostname & protocol for your site
+url: "http://ruimourato.com" # the base hostname & protocol for your site
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
@@ -66,3 +66,7 @@ highlighter: pygments
 sass:
   sass_dir: _sass
   style: :compressed
+
+# Automatic sitemap generation
+gems:
+  - jekyll-sitemap
