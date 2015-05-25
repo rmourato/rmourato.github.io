@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ruimourato.com" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://ruimourato.com"
 
 # THEME-SPECIFIC CONFIGURATION
 theme:
@@ -8,7 +8,7 @@ theme:
   title: Rui Mourato's Blog
   avatar: avatar.jpg
   gravatar: # Email MD5 hash
-  description: "Rui Mourato's Blog" # used by search engines
+  description: "Rui Mourato's Blog"
 
   # Header and footer text
   #header_text: >
@@ -26,24 +26,24 @@ theme:
   #dribbble:
   #facebook:
   #flickr:
-  github: "rmourato"
+  github: rmourato
   #google_plus:
   #instagram:
-  linkedin: https://www.linkedin.com/in/rmourato
+  linkedin: rmourato
   #pinterest:
   #reddit:
   #soundcloud:
   #stack_exchange:  # Full URL
   #steam:
   #tumblr:
-  #twitter: "twitter"
+  twitter: ruimourato
   #wordpress:
   #youtube:
 
   # Scripts
   google_analytics: UA-63241218-1
   disqus_shortname: ruimourato
-  katex: true # Enable if using math markup
+  #katex: true # Enable if using math markup
 
   # Localization strings
   str_follow_on: "Follow on"

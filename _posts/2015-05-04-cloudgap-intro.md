@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Introducing Cloudgap - Your Own Cloud Service"
+title: "Introducing Cloudgap - File Storage in the Cloud"
 description: "An app for managing your files over the web"
 tags: [AngularJs, C#, WebAPI2]
 #comments: true
 #share: true
 ---
 
-Have a look at a minimalist web-based file manager I made over a few weekends.
+Have a look at a minimalist web-based file manager I made.
 
 ![Cloudgap screenshot](/img/cloudgap/cloudgap_downloads.png)
 
