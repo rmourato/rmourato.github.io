@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog Launch"
+title: "Blog launch"
 description: "Hello world!"
 tags: [Info]
 #comments: true

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Open Source is not Open Use"
+title: "Open source doesn't mean open use"
 description: "Understanding how open source code can and cannot be used."
 tags: [Open Source, Legal]
 #comments: true

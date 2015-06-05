@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cloudgap Internals"
+title: "Cloudgap internals"
 description: "A look into how Cloudgap was made"
 tags: [AngularJs, C#, WebAPI2]
 #comments: true

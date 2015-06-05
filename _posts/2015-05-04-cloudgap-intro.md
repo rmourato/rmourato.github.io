@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing Cloudgap - File Storage in the Cloud"
+title: "Introducing cloudgap - file storage in the cloud"
 description: "An app for managing your files over the web"
 tags: [AngularJs, C#, WebAPI2]
 #comments: true
