@@ -42,7 +42,7 @@ theme:
 
   # Scripts
   google_analytics: UA-63241218-1
-  #disqus_shortname: ruimourato
+  disqus_shortname: ruimourato
   #katex: true # Enable if using math markup
 
   # Localization strings
