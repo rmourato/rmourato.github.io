@@ -11,9 +11,10 @@ I'm going to show a simple, yet powerful way to look
 at the performance of an application using Valgrind, Callgrind and
 KCacheGrind.
 
-The article is geared towards developers writing software in a Linux environment. 
+The article is geared towards developers writing software in a Linux environment
+and is meant to be a short introduction to the tools.
 
-These tools are incredibly useful and probably well known by anyone
+They are incredibly useful and probably well known by anyone
 developing in C and C++, but it's still worth mentioning them here and
 showing what they are capable of for quickly analysing a program and 
 finding out where optimization opportunities are.
@@ -160,6 +161,9 @@ functions.
 
 If you want to focus on a particular function you can simply select it 
 and the results shown will be relative to it.
+
+There are a number of other things the tools can give you, 
+so do explore!
 
 # "Some of my functions don't show, what gives?"
 
