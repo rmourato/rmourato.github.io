@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Performance analysis with KCacheGrind"
-description: "SOLID principles applied"
+description: "Profiling an application with the help of Valgrind, Callgrind and KCacheGrind"
 tags: [C, Valgrind, Callgrind, KCacheGrind, Performance, Profiling]
 #comments: true
 #share: true
