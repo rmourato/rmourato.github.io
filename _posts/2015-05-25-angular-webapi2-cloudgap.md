@@ -7,7 +7,7 @@ tags: [AngularJs, C#, WebAPI2]
 #share: true
 ---
 
-About 3 weeks ago (gosh, was it that long ago?) I published [Cloudgap](/2015/05/04/cloudgap-intro.html),
+About 3 weeks ago (gosh, was it that long ago?) I published [Cloudgap]({% post_url 2015-05-04-cloudgap-intro %}),
 a basic file manager based in AngularJs and Web API 2.
 
 Due to the usual constraints (work, family, etc) I didn't manage to write up an article
