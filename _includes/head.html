@@ -23,6 +23,9 @@
 {% else %}
   <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
+{% if page.twitter_img_path %}
+  <meta name="twitter:image:src" content="{{ site.url }}{{ page.twitter_img_path }}">
+{% endif %}
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
