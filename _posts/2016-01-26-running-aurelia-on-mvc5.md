@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Running Aurelia on an ASP.NET MVC 5 application"
-description: "I describe how to get Aurelia running from within an ASP.NET MVC 5 application"
+description: "A walkthrough on how to get Aurelia running from within an ASP.NET MVC 5 application"
 tags: [ASP.NET MVC 5, Aurelia, VS 2015, Windows 10]
 twitter_img_path: /img/2016/mvc5-aurelia/aurelia-logo.png
 #share: true
