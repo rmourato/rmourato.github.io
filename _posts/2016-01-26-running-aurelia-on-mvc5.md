@@ -188,6 +188,9 @@ gulp watch
 Open a browser and point it to the URL output by Gulp. If everything
 goes well you should see the Aurelia application loaded and running.
 
+Gulp will listen to changes you make to your application's files and 
+automatically build the application for you.
+
 ## Loading Aurelia from your MVC project
 
 Finally, let's host the application from your MVC project.
@@ -257,10 +260,12 @@ before putting anything in production.
 If everything went well you should be able to press F5 on Visual Studio
 and point the URL to '/Aurelia/Index'.
 
-This is going to load our Razor view. Any references to the script's in that view,
+This is going to load our Razor view. Any references to the scripts in that view,
 and Aurelia's dependencies, are done relative to your root '/Aurelia' which is where all 
-the application's files are so the application should load, feel and work just the same as when
-you ran it using Gulp.
+the application's files are.
+
+The framework will request the files under '/dist', so make sure Gulp is
+watching for changes and building the application.
 
 # Ready-made skeleton
 
