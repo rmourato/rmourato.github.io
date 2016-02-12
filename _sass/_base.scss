@@ -43,6 +43,11 @@
         font-size: $small-font-size;
     }
 
+	.imgBorder {
+		padding:1px;
+		border:1px solid #000000;
+	}
+
 /* Lists
  * ============================================== */
     ul, ol {
