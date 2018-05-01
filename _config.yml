@@ -17,7 +17,7 @@ paginate: 10
 paginate_path: "blog/page:num"
 
 # Analytics
-google_analytics: UA-63241218-1
+#google_analytics: UA-63241218-1
 
 # Build settings
 markdown: kramdown
